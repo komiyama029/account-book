@@ -1,6 +1,7 @@
 import { auth, signOut } from "@/auth";
 import { db, todos } from "@/db/schema";
 import { Button } from "@nextui-org/react";
+import Link from "next/link";
 import { TodoInputForm } from "./_components/TodoInputForm";
 
 export default async function Home() {
@@ -40,9 +41,11 @@ export default async function Home() {
 
 			<TodoInputForm action={createTodo} />
 
-			<Button variant="light" href="/list" className="flex mx-auto underline">
-				一覧へ
-			</Button>
+			<div className="flex justify-center mt-10">
+				<Link href="/todos" className="underline">
+					一覧へ
+				</Link>
+			</div>
 		</div>
 	);
 }

@@ -58,3 +58,4 @@ export const todos = sqliteTable(
 );
 
 export type InsertTodo = typeof todos.$inferInsert;
+export type SelectTodo = typeof todos.$inferSelect;
