@@ -43,3 +43,18 @@ export const verificationTokens = sqliteTable(
 		}),
 	}),
 );
+
+export const todos = sqliteTable(
+	"todo",
+	{
+		id: integer("id").primaryKey(),
+		userId: integer("userId")
+			.notNull()
+			.references(() => users.id, { onDelete: "cascade" }),
+		title: text("title"),
+		isDone: integer("isDone", { mode: "boolean" }),
+	},
+	() => [],
+);
+
+export type InsertTodo = typeof todos.$inferInsert;

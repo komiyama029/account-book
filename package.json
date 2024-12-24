@@ -9,7 +9,10 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky",
-    "tsc": "tsc --noEmit --project tsconfig.json"
+    "tsc": "tsc --noEmit --project tsconfig.json",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@auth/drizzle-adapter": "^1.7.4",

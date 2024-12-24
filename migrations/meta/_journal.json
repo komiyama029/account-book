@@ -8,6 +8,20 @@
       "when": 1734938963296,
       "tag": "0000_exotic_star_brand",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1735004987785,
+      "tag": "0001_abandoned_zuras",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1735005479099,
+      "tag": "0002_bizarre_guardsmen",
+      "breakpoints": true
     }
   ]
 }
